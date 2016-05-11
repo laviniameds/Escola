@@ -20,6 +20,7 @@ namespace Escola
         }
 
         public string GetNome() { return nome; }
-        public DateTime GetNascimento() { return nascimento; }
+        public string GetMatricula() { return matricula; }
+        public DateTime GetNascimento() { return nascimento.Date; }
     }
 }

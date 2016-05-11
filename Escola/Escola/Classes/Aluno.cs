@@ -10,6 +10,8 @@ namespace Escola
     {
         private string curso;
 
+        public string GetCurso() { return curso; }
+
         public Aluno(string nome, DateTime nascimento, string matricula,
             string curso) :base (nome,nascimento,matricula)
         {
