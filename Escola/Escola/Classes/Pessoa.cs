@@ -11,24 +11,54 @@ namespace Escola
         private string nome;
         private DateTime nascimento;
         private string matricula;
-        private List<Pessoa> lp = new List<Pessoa>();
 
-        public Pessoa(string nome, DateTime nascimento, string matricula)
+        public List<Pessoa> lp = new List<Pessoa>();
+
+        public string Nome
         {
-            this.nome = nome;
-            this.nascimento = nascimento;
-            this.matricula = matricula;
-            lp.Add(this);
+            get
+            {
+                return nome;
+            }
+
+            set
+            {
+                nome = value;
+            }
+        }
+        public DateTime Nascimento
+        {
+            get
+            {
+                return nascimento;
+            }
+
+            set
+            {
+                nascimento = value;
+            }
+        }
+        public string Matricula
+        {
+            get
+            {
+                return matricula;
+            }
+
+            set
+            {
+                matricula = value;
+            }
         }
 
-        public string GetNome() { return nome; }
-        public string GetMatricula() { return matricula; }
-        public DateTime GetNascimento() { return nascimento; }
-        public List<Pessoa> ExibirPessoas(string mes)
+        public string GetNome() { return Nome; }
+        public string GetMatricula() { return Matricula; }
+        public DateTime GetNascimento() { return Nascimento; }
+        public List<Pessoa> ExibirPessoas(int mes)
         {
             List<Pessoa> listaTemp = new List<Pessoa>();
             foreach (Pessoa p in lp)
-                if (p.GetNascimento().Month.ToString() == mes) listaTemp.Add(p);
+                if (p.GetNascimento().Month == mes) listaTemp.Add(p);
             return listaTemp;
         }
 

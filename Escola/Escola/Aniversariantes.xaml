@@ -7,7 +7,6 @@
         mc:Ignorable="d"
         Title="Aniversariantes" Height="350" Width="525">
     <Grid>
-        <GroupBox x:Name="groupBox" Header="Aniversariantes" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="74" Width="498"/>
         <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="22,39,0,0" VerticalAlignment="Top" Width="120">
             <ComboBoxItem Content="Janeiro"/>
             <ComboBoxItem Content="Fevereiro"/>
@@ -23,13 +22,6 @@
             <ComboBoxItem Content="Dezembro"/>
         </ComboBox>
         <Button x:Name="btnExibir" Content="Exibir" HorizontalAlignment="Left" Margin="165,39,0,0" VerticalAlignment="Top" Width="75" Click="btnExibir_Click"/>
-        <ListView x:Name="listView" HorizontalAlignment="Left" Height="222" Margin="10,89,0,0" VerticalAlignment="Top" Width="498">
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn/>
-                </GridView>
-            </ListView.View>
-        </ListView>
-
+        <ListBox x:Name="lb" HorizontalAlignment="Left" Height="222" Margin="10,89,0,0" VerticalAlignment="Top" Width="498"/>
     </Grid>
 </Window>

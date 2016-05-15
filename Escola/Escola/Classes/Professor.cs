@@ -10,12 +10,10 @@ namespace Escola
     {
         private string diretoria;
 
-        public string GetDiretoria() { return diretoria; }
-
-        public Professor(string nome, DateTime nascimento, string matricula,
-            string diretoria) :base (nome,nascimento,matricula)
+        public string Diretoria
         {
-            this.diretoria = diretoria;
+            get {return diretoria;}
+            set {diretoria = value;}
         }
     }
 }

@@ -59,26 +59,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="CadAluno.xaml">
+    <Page Include="Cadastros.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="CadProf.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
     </Page>
     <Compile Include="Aniversariantes.xaml.cs">
       <DependentUpon>Aniversariantes.xaml</DependentUpon>
     </Compile>
-    <Compile Include="CadAluno.xaml.cs">
-      <DependentUpon>CadAluno.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="CadProf.xaml.cs">
-      <DependentUpon>CadProf.xaml</DependentUpon>
+    <Compile Include="Cadastros.xaml.cs">
+      <DependentUpon>Cadastros.xaml</DependentUpon>
     </Compile>
     <Compile Include="Classes\Aluno.cs" />
     <Compile Include="App.xaml.cs">
@@ -86,14 +75,17 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Classes\IPessoa.cs" />
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Pessoa.cs" />
     <Compile Include="Classes\Professor.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

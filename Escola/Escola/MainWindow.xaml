@@ -8,13 +8,7 @@
         Title="MainWindow" Height="350" Width="525">
     <Grid>
         <Menu Height="25" VerticalAlignment="Top">
-            <MenuItem Header="Cadastros">
-                <MenuItem Header="Alunos" Click="MenuAluno_Click" />
-                <MenuItem Header="Professores" Click="MenuProf_Click"/>
-                 <Separator/>
-                <MenuItem Header="Sair" Click="SairClick"/>
-            </MenuItem>
-            <MenuItem Header="Aniversariantes" Click="Aniversariantes_Click"/>
+            <MenuItem Header="Escola" Click="Cadastros_Click" Height="25" Width="50"/>
         </Menu>
     </Grid>
 </Window>

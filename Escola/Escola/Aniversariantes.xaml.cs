@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace Escola 
+namespace Escola
 {
     /// <summary>
     /// Interaction logic for Aniversariantes.xaml
@@ -26,8 +26,7 @@ namespace Escola
 
         private void btnExibir_Click(object sender, RoutedEventArgs e)
         {
-            //Pessoa ip;
-            //ip.ExibirPessoas(comboBox.SelectedValue.ToString());          
+
         }
     }
 }
