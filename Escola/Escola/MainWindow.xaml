@@ -11,10 +11,10 @@
             <MenuItem Header="Cadastros">
                 <MenuItem Header="Alunos" Click="MenuAluno_Click" />
                 <MenuItem Header="Professores" Click="MenuProf_Click"/>
-                <MenuItem Header="Aniversariantes" Click="Aniversariantes_Click"/>
-                    <Separator/>
+                 <Separator/>
                 <MenuItem Header="Sair" Click="SairClick"/>
             </MenuItem>
+            <MenuItem Header="Aniversariantes" Click="Aniversariantes_Click"/>
         </Menu>
     </Grid>
 </Window>

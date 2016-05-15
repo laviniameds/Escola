@@ -26,8 +26,8 @@ namespace Escola
 
         private void btnExibir_Click(object sender, RoutedEventArgs e)
         {
-            Pessoa ip;
-            ip.ExibirPessoas(comboBox.SelectedValue.ToString());          
+            //Pessoa ip;
+            //ip.ExibirPessoas(comboBox.SelectedValue.ToString());          
         }
     }
 }
