@@ -39,5 +39,10 @@ namespace Escola
         {
             Close();
         }
+
+        private void Aniversariantes_Click(object sender, RoutedEventArgs e)
+        {
+            (new Aniversariantes()).Show();
+        }
     }
 }

@@ -10,5 +10,6 @@ namespace Escola
     {
         string GetNome();
         DateTime GetNascimento();
+        List<Pessoa> ExibirPessoas(string mes);
     }
 }

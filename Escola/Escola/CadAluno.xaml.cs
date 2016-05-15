@@ -29,6 +29,7 @@ namespace Escola
         {
             Aluno a = new Aluno(txtNom.Text, dp.SelectedDate.Value.Date,
                 txtMatricula.Text, txtCurso.Text);
+
             string aluno = "Nome: " + a.GetNome() + " - Nascimento: " + a.GetNascimento()
                 + " - Matricula: " + a.GetMatricula() + " - Curso: " + a.GetCurso(); 
             lbAluno.Items.Add(aluno);

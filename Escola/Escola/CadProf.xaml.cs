@@ -30,7 +30,7 @@ namespace Escola
                 txtMatricula.Text, txtDiretoria.Text);
             string prof = "Nome: " + p.GetNome() + " - Nascimento: " + p.GetNascimento()
                 + " - Matricula: " + p.GetMatricula() + " - Diretoria: " + p.GetDiretoria();
-            lbProf.Items.Add(prof);
+            lbProf.Items.Add(prof);            
         }
 
         private void btnExibir_Click(object sender, RoutedEventArgs e)
