@@ -1,0 +1,19 @@
+﻿<Window x:Class="Escola.CadProf"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Escola"
+        mc:Ignorable="d"
+        Title="CadProf" Height="350" Width="525">
+    <Grid>
+        <GroupBox x:Name="groupBox" Header="Professores" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="138" Width="498"/>
+        <TextBox x:Name="txtNom" HorizontalAlignment="Left" Height="23" Margin="18,34,0,0" TextWrapping="Wrap" Text="Nome" VerticalAlignment="Top" Width="243"/>
+        <TextBox x:Name="txtMatricula" HorizontalAlignment="Left" Height="23" Margin="266,34,0,0" TextWrapping="Wrap" Text="Matricula" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtDiretoria" HorizontalAlignment="Left" Height="23" Margin="266,62,0,0" TextWrapping="Wrap" Text="Diretoria" VerticalAlignment="Top" Width="232"/>
+        <ListBox x:Name="lbProf" HorizontalAlignment="Left" Height="158" Margin="10,153,0,0" VerticalAlignment="Top" Width="498"/>
+        <DatePicker x:Name="dp" HorizontalAlignment="Left" Margin="391,33,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.724,0.65" Width="107"/>
+        <Button x:Name="btnCadastrar" Content="Cadastrar" HorizontalAlignment="Left" Margin="423,91,0,0" VerticalAlignment="Top" Width="75" Click="btnCadastrar_Click"/>
+
+    </Grid>
+</Window>
