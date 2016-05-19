@@ -15,18 +15,20 @@ using System.Windows.Shapes;
 namespace Escola
 {
     /// <summary>
-    /// Interaction logic for Aniversariantes.xaml
+    /// Interaction logic for ExibNiver.xaml
     /// </summary>
-    public partial class Aniversariantes : Window
+    public partial class ExibNiver : Window
     {
-        public Aniversariantes()
+        public ExibNiver()
         {
             InitializeComponent();
         }
 
         private void btnExibir_Click(object sender, RoutedEventArgs e)
         {
-
+            lbniver.ItemsSource = null;
+            lbniver.ItemsSource = Pessoa.Aniversariantes(Aluno.ListarAlunos(), Professor.ListarProfs(), 
+                Convert.ToInt32(((ComboBoxItem)comboBox.SelectedItem).Content));
         }
     }
 }

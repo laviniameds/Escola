@@ -6,61 +6,29 @@ using System.Threading.Tasks;
 
 namespace Escola
 {
-    class Pessoa : IPessoa
+    public class Pessoa : IPessoa
     {
         private string nome;
         private DateTime nascimento;
         private string matricula;
 
-        public List<Pessoa> lp = new List<Pessoa>();
-
-        public string Nome
+        public Pessoa(string nome, DateTime nascimento, string matricula)
         {
-            get
-            {
-                return nome;
-            }
-
-            set
-            {
-                nome = value;
-            }
-        }
-        public DateTime Nascimento
-        {
-            get
-            {
-                return nascimento;
-            }
-
-            set
-            {
-                nascimento = value;
-            }
-        }
-        public string Matricula
-        {
-            get
-            {
-                return matricula;
-            }
-
-            set
-            {
-                matricula = value;
-            }
+            this.nome = nome;
+            this.nascimento = nascimento;
+            this.matricula = matricula;
         }
 
-        public string GetNome() { return Nome; }
-        public string GetMatricula() { return Matricula; }
-        public DateTime GetNascimento() { return Nascimento; }
-        public List<Pessoa> ExibirPessoas(int mes)
-        {
-            List<Pessoa> listaTemp = new List<Pessoa>();
-            foreach (Pessoa p in lp)
-                if (p.GetNascimento().Month == mes) listaTemp.Add(p);
-            return listaTemp;
-        }
+        public string GetNome() { return nome; }
+        public DateTime GetNascimento() { return nascimento;}
+        public string GetMatricula() { return matricula; }
 
+        public static List<IPessoa> Aniversariantes(IPessoa[] aluno, IPessoa[] professor, int mes)
+        {
+            List<IPessoa> pessoas = new List<IPessoa>();
+            foreach (IPessoa a in aluno) if (a.GetNascimento().Month == mes) pessoas.Add(a);
+            foreach (IPessoa p in professor) if (p.GetNascimento().Month == mes) pessoas.Add(p);
+            return pessoas;
+        }
     }
 }

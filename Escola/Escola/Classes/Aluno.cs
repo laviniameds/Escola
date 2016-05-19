@@ -6,14 +6,22 @@ using System.Threading.Tasks;
 
 namespace Escola
 {
-    class Aluno : Pessoa
+    public class Aluno : Pessoa
     {
         private string curso;
 
-        public string Curso
+        public Aluno(string nome, DateTime nascimento, 
+            string matricula, string curso) : base(nome, nascimento, matricula)
         {
-            get {return curso;}
-            set {curso = value;}
+            this.curso = curso;
+        }
+
+        public static List<Aluno> listAluno = new List<Aluno>();
+        public void Cadastrar(Aluno a) { listAluno.Add(a); }
+        public static Aluno[] ListarAlunos() { return listAluno.ToArray<Aluno>();}
+        public override string ToString()
+        {
+            return $"{GetNome()} {GetNascimento()} {GetMatricula()} {curso}";
         }
     }
 }

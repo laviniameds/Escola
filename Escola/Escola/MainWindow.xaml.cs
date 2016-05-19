@@ -25,9 +25,19 @@ namespace Escola
             InitializeComponent();
         }
 
-        private void Cadastros_Click(object sender, RoutedEventArgs e)
+        private void CadAluno_Click(object sender, RoutedEventArgs e)
         {
-            (new Cadastros()).Show();
+            (new CadAluno()).Show();
+        }
+
+        private void CadProf_Click(object sender, RoutedEventArgs e)
+        {
+            (new CadProf()).Show();
+        }
+
+        private void Aniver_Click(object sender, RoutedEventArgs e)
+        {
+            (new ExibNiver()).Show();
         }
     }
 }

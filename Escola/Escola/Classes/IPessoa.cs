@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Escola
 {
-    interface IPessoa
+    public interface IPessoa
     {
         string GetNome();
         DateTime GetNascimento();
